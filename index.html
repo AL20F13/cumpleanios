@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+  <link rel="stylesheet" href="css/vhjok.min.css"/>
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+ <body>
+        <div data-role="page" id="inicio">
+	<div data-role="header">
+		
+        <h1 align="center">Calcula los dias para tu cumpleaños</h1>
+	</div>
+    <div align="center">
+	<div data-role="content">	
+    
+    <h2 >BIENVENIDO</h2>
+		<p>Esta aplicacion sirve para saber cuantos dias faltan para tu cumpleaños de una manera facil y divertido</p>
+        <div align="center">
+        <a  href="#datos" id="btncomenzar" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline ">
+        
+        COMENZAR
+        </a>	
+        </div>	
+ </div>
+ 
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Gabriela_Deicy_Wendy</h4>
+	</div>
+</div>
+</div>
+
+<div data-role="page" id="datos">
+	<div data-role="header">
+		
+        <h1>ESCRIBE TU NOMBRE</h1>
+	</div>
+	<div data-role="content" >
+    NOMBRE	
+ <input type="text" name="nombre" placeholder="NOMBRE" style="we:100" id="txtnombre" >
+	 <div data-role="controlgroup" data-type="horizontal" align="center">
+
+        <a  href="#inicio" id="btnatras" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all ui-btn-inline ">   
+        ATRAS
+        </a>	
+        <a  href="#fecha" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " id="btncontinuar">
+        
+     CONTINUAR
+        </a>	
+        </div>		
+	 </div>
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Gabriela_Deicy_Wendy</h4>
+	</div>
+</div>
+
+<div data-role="page" id="fecha">
+	<div data-role="header">
+		
+        <h1>¿CUAL ES TU FECHA DE NACIMIENTO?</h1>
+	</div>
+	<div align="center" data-role="controlgroup" data-type="horizontal">	
+    
+    <div align="center" style="width:100px; float:left; padding:15px">
+    DD
+    <input type="number" name="numero" placeholder="DIA" id="txtdia">
+    
+    </div>
+     <div align="center" style="width:100px; float:left; padding:15px">
+     MM
+    <input type="number" name="numero" placeholder="MES" id="txtmes">
+    
+    </div>
+     <div align="center" style="width:80px; float:left; padding:15px">
+     AAAA
+    <input type="number" name="numero" placeholder="AÑO" id="txtanio">
+    
+    </div>
+		 <div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+        <a  href="#datos" data-transition="pop" class="ui-btn ui-icon-arrow-l ui-btn-icon-left ui-shadow ui-corner-all ui-btn-inline ">   
+        ATRAS
+        </a>	
+        <a  href="#resultado" data-transition="pop" class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " id="btncalcular">
+         
+        CALCULAR
+        </a>	
+        </div>			
+	</div>
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Gabriela_Deicy_Wendy</h4>
+	</div>
+</div>
+
+<div data-role="page" id="resultado" >
+	<div data-role="header">
+		
+        <h1>FALTA...</h1>
+	</div>
+	<div data-role="content">
+ <div id="nombre" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="dias" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="cumple" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="felicidades" align="center" hidden="true" class="final">
+FELICIDADES YA FALTAN POCOS DIAS PARA TU CUMPLEAÑOS
+<br>
+<br>
+ <img src="pastel.jpg" width="200" height="200">
+
+ </div>
+  <div id="edad" align="center" class="final">
+ 
+ 
+ </div>
+ <div align="center">
+   <a  href="#inicio" data-transition="pop" id="btn_inicio" class="ui-btn ui-icon-home ui-btn-icon-right ui-shadow ui-corner-all ui-btn-inline " >
+         
+        INICIO
+        </a>
+ </div>       
+    </div>
+ 
+ 
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Gabriela_Deicy_Wendy</h4>
+	</div>
+</div>
+
+    </body>
+
+</html>
